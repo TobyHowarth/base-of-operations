@@ -1,0 +1,62 @@
+/*
+--------------------------
+Sass Settings for Project
+--------------------------
+
+$Font Sizing - Base font Size with line height declared
+$Branding - Brand colours based on design for use in the build
+$Typography - Fonts for the headings and body.
+$Links - colors and styles for anchor links.
+$Errors - Colors for error messages based around forms
+$Grid - Grid Sizing, columns, padding etc
+
+*/
+
+
+
+// $Font 
+
+$base-font-size: 16;
+$base-line-height: 24;
+
+
+// $Branding
+
+$base-color: black;
+$comp-color: green;
+$3rd-color: red;
+$alt-1: grey;
+$alt-2: white;
+
+$selection: $link-color;
+$selection-text: #FFF;
+
+// $Typography
+
+$body-font: Georgia, serif;
+$header-font: $body-font
+
+
+// $Links
+
+$link-color: red;
+$link-color-hover: darken($link-color, 10);
+$link-color-visited: $link-color-hover;
+$link-color-focus: darken($link-color-hover, 10);
+
+// $Errors
+
+$error: red;
+$warning: purple;
+$success: green;
+$information: wheat;
+
+
+// $Grid
+
+
+$columns: 12; // Number of Columns used in the Grid
+
+$column-width: 60px; // Width of Each Column
+						
+$gutter-width: 20px; // Gutter Width for Each Column
