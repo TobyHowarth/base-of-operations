@@ -11,4 +11,30 @@ Author: Toby Howarth
 
 */
 
+@import "core/_grid.scss";
 
+@import "settings.scss";
+
+
+/*
+---------------
+Core Page Details
+---------------
+*/
+
+.page{
+	width:$oage-width;
+	margin:0 auto;
+}
+
+
+
+// Page Content
+
+
+
+
+.a{
+ @include column(12);
+
+}
