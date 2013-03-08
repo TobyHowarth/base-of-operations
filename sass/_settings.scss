@@ -19,7 +19,6 @@ $Links - colors and styles for anchor links.
 
 $Errors - Colors for error messages based around forms
 
-$Grid - Grid Sizing, columns, padding etc
 
 */
 
@@ -47,38 +46,30 @@ $brand-black:			black;
 $brand-grey: 			grey;
 $brand-white: 			white;
 
-$selection: $link-color;
-$selection-text: #FFF;
+$selection: 			$link-color;
+$selection-text: 		$brand-white;
 
 // $Typography
 
-$body-font: Georgia, serif;
-$header-font: $body-font
+$body-font: 			'Arial' Helvetica, serif;
+$header-font: 			$body-font
 
 
 // $Links
 
-$link-color: red;
-$link-color-hover: darken($link-color, 10);
-$link-color-visited: $link-color-hover;
-$link-color-focus: darken($link-color-hover, 10);
+$link-color: 			red;
+$link-color-hover: 		darken($link-color, 10);
+$link-color-visited: 	$link-color-hover;
+$link-color-focus: 		darken($link-color-hover, 10);
 
 // $Errors
 
-$error: red;
-$warning: purple;
-$success: green;
-$information: wheat;
+$error: 				red;
+$warning: 				purple;
+$success: 				green;
+$information: 			wheat;
 
 
-// $Grid
 
-$page-width: 960px;
 
-$columns: 12; // Number of Columns used in the Grid
 
-$column-width: 60px; // Width of Each Column
-						
-$gutter-width: 20px; // Gutter Width for Each Column
-
-$tota-width:100%; // Width of grid can be switched between fluid and fixed
