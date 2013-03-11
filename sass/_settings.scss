@@ -7,7 +7,11 @@ Sass Settings for Project
 Index of Parts
 --------------
 
+
+
 $Debug - Debug on/off switch
+
+$Page - Define the page width here if desktop is a max width.
 
 $Font Sizing - Base font Size with line height declared
 
@@ -24,16 +28,18 @@ $Flow - Widths, Margins and Padding for the layout
 
 */
 
+
+// $Debug
+$debugMode:         false;
+
+
+
 // $Page
 
 @mixin page-width{
 	max-width:1200px;
 	margin:0 auto;
 }
-
-// $Debug
-$debugMode:         false;
-
 
 // $Font 
 
