@@ -1,0 +1,92 @@
+
+
+// Demo styles for the grid examples
+
+
+// Mixin to add some style and substance to the grid
+
+@mixin grid-test{
+	height:50px;
+	background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAHklEQVQIW2NkQAXGjEh8YyD7LEwAzAFJggTgHJAAAE+uAzjGgU3wAAAAAElFTkSuQmCC) repeat;
+	color:#222;
+}
+
+
+// Grid Layout and example oft he clean sexy markup
+
+
+
+// Page Content
+
+header{
+	@include column(12);
+	@include margin-bottom;
+}
+
+.a{
+	@include column(12);
+	@include grid-test;
+	@include margin-bottom;
+}
+
+.b, .c, .d, .e{
+	@include column(3);
+	@include grid-test;
+	@include margin-bottom;
+}
+
+.f, .g{
+	@include column(6);
+	@include grid-test;
+	@include margin-bottom;
+}
+
+.h{
+	@include column(1);
+	@include grid-test;
+	@include margin-bottom;
+}
+
+// Nest Test
+
+.i{
+	@include column(9);
+	@include grid-test;
+	@include margin-bottom;
+	height:500px;
+}
+
+.i-row{
+	@include row(9);
+	margin-bottom:20px;
+}
+
+.i-cell{
+	@include column(3);
+	background:purple;
+}
+
+.i-cell-x{
+	@include column(4);
+	background:blue;
+}
+
+.i-cell-y{
+	@include column(5);
+	background:blue;
+}
+.j{
+	@include column(3);
+	@include grid-test;
+	@include margin-bottom;
+	height:500px;
+}
+
+//push test
+
+
+.k{
+	@include column(3);
+	@include grid-test;
+	@include push(2);
+}

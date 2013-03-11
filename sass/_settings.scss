@@ -24,7 +24,12 @@ $Flow - Widths, Margins and Padding for the layout
 
 */
 
+// $Page
 
+@mixin page-width{
+	max-width:1200px;
+	margin:0 auto;
+}
 
 // $Debug
 $debugMode:         false;

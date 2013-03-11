@@ -11,6 +11,7 @@ Author: Toby Howarth
 
 */
 
+
 //ALL THE IMPORTS 
 
 //First we add in a reset
@@ -35,6 +36,9 @@ Author: Toby Howarth
 
 @import "core/_typography.scss";
 
+
+
+
 /*
 ---------------
 Core Page Details
@@ -42,96 +46,24 @@ Core Page Details
 */
 
 
-@mixin grid-test{
-	background:red;
-	height:50px;
-}
 
 
 // Project Main
 
 .page{
-	max-width:1200px;
-	margin:0 auto;
+	@include page-width;
+	margin-top:30px;
 }
 
-.typog-test{
-	max-width:550px;
-}
-
-// Page Content
-
-header{
-	@include column(12);
-	@include grid-test;
-	@include margin-bottom;
-}
-
-.a{
-	@include column(12);
-	@include grid-test;
-	@include margin-bottom;
-}
-
-.b, .c, .d, .e{
-	@include column(3);
-	@include grid-test;
-	@include margin-bottom;
-}
-
-.f, .g{
-	@include column(6);
-	@include grid-test;
-	@include margin-bottom;
-}
-
-.h{
-	@include column(1);
-	@include grid-test;
-	@include margin-bottom;
-}
-
-// Nest Test
-
-.i{
-	@include column(9);
-	@include grid-test;
-	@include margin-bottom;
-	height:500px;
-}
-
-.i-row{
-	@include row(9);
-	margin-bottom:20px;
-}
-
-.i-cell{
-	@include column(3);
-	background:purple;
-}
-
-.i-cell-x{
-	@include column(4);
-	background:blue;
-}
-
-.i-cell-y{
-	@include column(5);
-	background:blue;
-}
-.j{
-	@include column(3);
-	@include grid-test;
-	@include margin-bottom;
-	height:500px;
-}
-
-//push test
 
 
-.k{
-	@include column(3);
-	@include grid-test;
-	@include push(2);
-}
+// Delete this import to remove the demo styles used on the grids page
+
+@import "demo/_demo.scss";
+
+
+
+
+
+
 

@@ -37,7 +37,7 @@ body{
 
 p{
 	@include font-rem(16);
-	line-height:1.75;
+	line-height:$line-height;
 	@include margin-bottom;
 }
 
@@ -92,11 +92,15 @@ p a{
 a.btn{
 	display:inline-block;
 	padding:8px 12px;
-	background-color:red;
+	background-color:green;
 	@include border-radius;
 	color:white;
 	text-decoration:none;
 	@include margin-bottom;
+}
+
+a.btn:hover{
+	background-color:#222;
 }
 
 // Lists
