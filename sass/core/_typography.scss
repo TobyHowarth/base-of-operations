@@ -24,6 +24,9 @@ Base line Typography
 	letter-spacing:2px;
 }
 
+
+
+
 // We Declare our Line Height
 
 $line-height:1.4;
@@ -39,6 +42,7 @@ p{
 	@include font-rem(16);
 	line-height:$line-height;
 	@include margin-bottom;
+
 }
 
 strong{
@@ -121,6 +125,20 @@ ul li, ol li, dl dt{
 li ul, li ol, dt dl{
 	margin:0 0 0 20px;
 }
+
+//floating lists
+
+// Mixin to float lists in a row, define the list width in the include 
+
+	// 30% 3 Col 
+
+@mixin list-col($col-list-width){
+	width:$col-list-width;
+	float:left;
+	margin-right:10px;
+}
+
+
 
 // Headings
 

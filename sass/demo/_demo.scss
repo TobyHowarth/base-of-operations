@@ -90,3 +90,17 @@ header{
 	@include grid-test;
 	@include push(2);
 }
+
+
+
+// List Demo
+
+
+ul.col-list{
+	@include list-col(20%);
+	@include margin-bottom;
+}
+
+.clear{
+	@include clearfix;
+}
