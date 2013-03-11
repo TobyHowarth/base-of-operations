@@ -17,6 +17,12 @@ Author: Toby Howarth
 
 @import "core/_reset.scss";
 
+
+//Mixins for non specific things loaded first to ensure they work
+
+@import "core/_mixins.scss";
+
+
 // Settings file for core values used throught the project
 @import "_settings.scss";
 
@@ -24,6 +30,10 @@ Author: Toby Howarth
 // Grid System Based on Variables in grid.scss
 @import "core/_grid.scss";
 
+
+//Some sexy Tpography Styling
+
+@import "core/_typography.scss";
 
 /*
 ---------------
@@ -45,6 +55,9 @@ Core Page Details
 	margin:0 auto;
 }
 
+.typog-test{
+	max-width:550px;
+}
 
 // Page Content
 
