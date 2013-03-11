@@ -4,7 +4,12 @@
 
 //Import the grid layout
 
-@import "/settings.scss";
+$columns: 				12; // Number of Columns used in the Grid
+$column-width: 			80px; // Width of Each Column						
+$gutter-width: 			20px; // Gutter Width for Each Column
+
+//$total-width:			100%; // Width of grid can be switched between fluid and fixed (can be $page-width for fixed)
+
 
 
 // Utility function — you should never need to modify this

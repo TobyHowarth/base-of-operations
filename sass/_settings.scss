@@ -19,6 +19,8 @@ $Links - colors and styles for anchor links.
 
 $Errors - Colors for error messages based around forms
 
+$Flow - Widths, Margins and Padding for the layout
+
 
 */
 
@@ -46,18 +48,17 @@ $brand-black:			black;
 $brand-grey: 			grey;
 $brand-white: 			white;
 
-$selection: 			$link-color;
-$selection-text: 		$brand-white;
+
 
 // $Typography
 
 $body-font: 			'Arial' Helvetica, serif;
-$header-font: 			$body-font
+$header-font: 			$body-font;
 
 
 // $Links
 
-$link-color: 			red;
+$link-color:			red;
 $link-color-hover: 		darken($link-color, 10);
 $link-color-visited: 	$link-color-hover;
 $link-color-focus: 		darken($link-color-hover, 10);
@@ -70,6 +71,12 @@ $success: 				green;
 $information: 			wheat;
 
 
+// $Flow
 
+$page-width:1200px;
+
+@mixin margin-bottom{
+	margin-bottom:20px;
+}
 
 

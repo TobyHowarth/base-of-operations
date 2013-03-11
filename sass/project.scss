@@ -11,9 +11,14 @@ Author: Toby Howarth
 
 */
 
-@import "core/_grid.scss";
+//ALL THE IMPORTS 
 
+// Settings file for core values used throught the project
 @import "_settings.scss";
+
+
+// Grid System Based on Variables in grid.scss
+@import "core/_grid.scss";
 
 
 /*
@@ -22,19 +27,52 @@ Core Page Details
 ---------------
 */
 
+
+@mixin grid-test{
+	background:red;
+	height:50px;
+}
+
+
+// Project Main
+
 .page{
-	width:$oage-width;
+	max-width:1200px;
 	margin:0 auto;
 }
 
 
-
 // Page Content
 
-
-
+header{
+	@include column(12);
+	@include grid-test;
+	@include margin-bottom;
+}
 
 .a{
- @include column(12);
-
+	@include column(12);
+	@include grid-test;
+	@include margin-bottom;
 }
+
+.b, .c, .d, .e{
+	@include column(3);
+	@include grid-test;
+	@include margin-bottom;
+}
+
+.f, .g{
+	@include column(6);
+	@include grid-test;
+	@include margin-bottom;
+}
+
+.h{
+	@include column(1);
+	@include grid-test;
+	@include margin-bottom;
+}
+
+
+
