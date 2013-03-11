@@ -11,12 +11,17 @@ Base line Typography
 
 
 
-// We Start with a lovely mixin
+// We Start with a lovely mixin or 2
 
 
 @mixin font-rem($size) {
 	font-size: 0px + $size;
 	font-size: $size / $base-font-size +rem;
+}
+
+@mixin uppercase{
+	text-transform:uppercase;
+	letter-spacing:2px;
 }
 
 // We Declare our Line Height
@@ -74,6 +79,10 @@ a{
 	text-decoration:none;
 }
 
+a.underline{
+	text-decoration:underline;
+}
+
 p a{
 	text-decoration:none;
 }
@@ -121,32 +130,30 @@ h1{
 h2{
 	@include font-rem(26);
 	@include margin-bottom;
-
 }
 
 
 h3{
 	@include font-rem(22);
 	@include margin-bottom;
-
 }
 
 
 h4{
 	@include font-rem(20);
 	@include margin-bottom;
-
 }
 
 
 h5{
 	@include font-rem(18);
 	@include margin-bottom;
-
 }
 
 h6{
 	@include font-rem(16);
 	@include margin-bottom;
-
 }
+
+
+
