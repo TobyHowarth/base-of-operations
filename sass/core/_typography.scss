@@ -1,0 +1,39 @@
+/*
+-----------------------
+-----------------------
+
+Base line Typography
+
+-----------------------
+-----------------------
+
+*/
+
+
+// We Start with a lovely mixin
+
+
+@mixin font-rem($size) {
+	font-size: 0px + $size;
+	font-size: $size / $doc-font-size +rem;
+}
+
+// We Declare our Line Height
+
+$line-height:1.4;
+
+
+// Body Styles
+
+body{
+	line-height:$line-height;
+}
+
+
+// Headings
+
+
+h1{
+	@include font-size(32);
+
+}

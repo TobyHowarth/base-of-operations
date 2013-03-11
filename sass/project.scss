@@ -13,6 +13,10 @@ Author: Toby Howarth
 
 //ALL THE IMPORTS 
 
+//First we add in a reset
+
+@import "core/_reset.scss";
+
 // Settings file for core values used throught the project
 @import "_settings.scss";
 

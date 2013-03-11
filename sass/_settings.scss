@@ -52,7 +52,7 @@ $brand-white: 			white;
 
 // $Typography
 
-$body-font: 			'Arial' Helvetica, serif;
+$body-font: 			Georgia, Serif;
 $header-font: 			$body-font;
 
 
@@ -73,7 +73,6 @@ $information: 			wheat;
 
 // $Flow
 
-$page-width:1200px;
 
 @mixin margin-bottom{
 	margin-bottom:20px;
