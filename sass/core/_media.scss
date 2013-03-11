@@ -48,3 +48,27 @@
         }
     
  
+
+ // Images are here as well
+
+
+ /**
+ * Image placement variations.
+ */
+.img--right{
+    float:right;
+    @include margin-bottom;
+    margin-left:5px;
+}
+.img--left{
+    float:left;
+    @include margin-bottom;
+    margin-right:5px;
+    
+}
+.img--center{
+    display:block;
+    margin-right:auto;
+    @include margin-bottom;
+    margin-left:auto;
+}
