@@ -74,5 +74,47 @@ header{
 	@include margin-bottom;
 }
 
+// Nest Test
 
+.i{
+	@include column(9);
+	@include grid-test;
+	@include margin-bottom;
+	height:500px;
+}
+
+.i-row{
+	@include row(9);
+	margin-bottom:20px;
+}
+
+.i-cell{
+	@include column(3);
+	background:purple;
+}
+
+.i-cell-x{
+	@include column(4);
+	background:blue;
+}
+
+.i-cell-y{
+	@include column(5);
+	background:blue;
+}
+.j{
+	@include column(3);
+	@include grid-test;
+	@include margin-bottom;
+	height:500px;
+}
+
+//push test
+
+
+.k{
+	@include column(3);
+	@include grid-test;
+	@include push(2);
+}
 
