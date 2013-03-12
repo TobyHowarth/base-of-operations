@@ -7,31 +7,22 @@ Sass Settings for Project
 Index of Parts
 --------------
 
+1. $Page - Define the page width here if desktop is a max width.
 
+2. $Font Sizing - Base font Size with line height declared
 
-$Debug - Debug on/off switch
+3. $Branding - Brand colours based on design for use in the build
 
-$Page - Define the page width here if desktop is a max width.
+4. $Typography - Fonts for the headings and body.
 
-$Font Sizing - Base font Size with line height declared
+5. $Links - colors and styles for anchor links.
 
-$Branding - Brand colours based on design for use in the build
+6. $Errors - Colors for error messages based around forms
 
-$Typography - Fonts for the headings and body.
-
-$Links - colors and styles for anchor links.
-
-$Errors - Colors for error messages based around forms
-
-$Flow - Widths, Margins and Padding for the layout
+7. $Flow - Widths, Margins and Padding for the layout
 
 
 */
-
-
-// $Debug
-$debugMode:         false;
-
 
 
 // $Page
@@ -71,8 +62,7 @@ $header-font: 			$body-font;
 
 $link-color:			red;
 $link-color-hover: 		darken($link-color, 10);
-$link-color-visited: 	$link-color-hover;
-$link-color-focus: 		darken($link-color-hover, 10);
+
 
 // $Errors
 

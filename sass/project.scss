@@ -14,10 +14,13 @@ Author: Toby Howarth
 
 //ALL THE IMPORTS 
 
-//First we add in a reset
+//First we add in a reset and some normalize magic and a debug file to pick up any code issues (inuit.css genius again)
 
 @import "core/_reset.scss";
 
+@import "core/_normalize.scss";
+
+@import "core/_debug.scss";
 
 //Mixins for non specific things loaded first to ensure they work
 
@@ -59,7 +62,7 @@ Core Page Details
 
 
 
-// Delete this import to remove the demo styles used on the grids page
+// Delete this import to remove the demo styles used on the grids / lists and Example pages
 
 @import "demo/_demo.scss";
 

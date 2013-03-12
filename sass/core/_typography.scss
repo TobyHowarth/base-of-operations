@@ -35,6 +35,7 @@ $line-height:1.4;
 // Body Styles
 
 body{
+	font-family:$body-font;
 	line-height:$line-height;
 }
 
@@ -58,34 +59,20 @@ em{
 
 // Links 
 
-a {
-	&:link {
-		color: $link-color;
-	}
-	&:visited {
-		color: $link-color-visited
-	}
-	&:hover {
-		color: $link-color-hover
-	}
-	&:active {
-		color: $link-color-hover;
-		position:relative;
-		top:1px;
-	}
-	&:focus {
-		color: $link-color-focus
-	}
-}
-
 a{	
 	display:inline-block;
 	text-decoration:none;
 }
 
+a:active{
+	position:relative;
+	top:1px;
+}
+
 a.underline{
 	text-decoration:underline;
 }
+
 
 p a{
 	text-decoration:none;
@@ -124,6 +111,14 @@ ul li, ol li, dl dt{
 
 li ul, li ol, dt dl{
 	margin:0 0 0 20px;
+}
+
+@mixin nav--horizontal{
+	display:inline-block;
+	float:left;
+	margin:0 10px 0 0;
+	padding:8px;
+	line-height:1.5;
 }
 
 //floating lists

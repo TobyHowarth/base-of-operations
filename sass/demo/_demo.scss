@@ -104,3 +104,70 @@ ul.col-list{
 .clear{
 	@include clearfix;
 }
+
+
+// Styles for the Example Site
+
+
+header.eg-header{
+	@include column(9);
+	@include margin-bottom;
+}
+
+h1.company-name{
+	@include font-rem(60);
+}
+
+.logo{
+	@include column(3);
+	@include margin-bottom;
+}
+nav{
+	@include column(12);
+	@include margin-bottom;
+	background:#222;
+	@include border-radius;
+	
+}
+
+nav ul li{
+	@include nav--horizontal;
+}
+
+nav ul li a{
+	color:#fff;
+}
+
+.home-image{
+	@include column(4);
+	@include margin-bottom;
+}
+
+section{
+	@include column(6);
+	@include margin-bottom;
+}
+
+aside{
+	@include column(4);
+	@include margin-bottom;
+	@include push(2);
+}
+
+
+.home-lists{
+	@include column(12);
+	@include margin-bottom;
+}
+			
+footer{
+	@include column(12);
+	height:50px;
+	background:#222;
+}
+
+
+
+
+
+
